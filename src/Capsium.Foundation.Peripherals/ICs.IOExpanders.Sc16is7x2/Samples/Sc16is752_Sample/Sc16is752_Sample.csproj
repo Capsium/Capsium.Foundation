@@ -10,7 +10,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\ICs.IOExpanders.Sc16is7x2.csproj" />
   </ItemGroup>
   <ItemGroup>

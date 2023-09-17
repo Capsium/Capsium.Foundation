@@ -13,7 +13,7 @@
     <None Remove="Capsium.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\Displays.TftSpi.csproj" />
     <PackageReference Include="SimpleJpegDecoder" Version="0.4.0" />
   </ItemGroup>

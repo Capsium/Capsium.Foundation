@@ -16,7 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Driver\Sensors.Camera.Vc0706.csproj" />
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Capsium.config.yaml">

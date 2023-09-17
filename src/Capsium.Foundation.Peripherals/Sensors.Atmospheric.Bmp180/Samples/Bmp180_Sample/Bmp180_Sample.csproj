@@ -15,7 +15,7 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\Sensors.Atmospheric.Bmp180.csproj" />
   </ItemGroup>
   <ItemGroup>

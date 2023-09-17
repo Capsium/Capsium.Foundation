@@ -10,7 +10,7 @@
     <RootNamespace>ICs.IOExpanders</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\ICs.IOExpanders.Pca9685.csproj" />
   </ItemGroup>
   <ItemGroup>

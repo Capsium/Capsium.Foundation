@@ -16,7 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Driver\Displays.TextDisplayMenu.csproj" />
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\Displays.Ssd130x\Driver\Displays.Ssd130x.csproj" />
   </ItemGroup>
   <ItemGroup>

@@ -17,7 +17,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\ICs.IOExpanders.SerialWombat.csproj" />
   </ItemGroup>
   <ItemGroup>

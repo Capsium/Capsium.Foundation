@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Driver\Leds.Ws2812.csproj" />
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Capsium.config.yaml">

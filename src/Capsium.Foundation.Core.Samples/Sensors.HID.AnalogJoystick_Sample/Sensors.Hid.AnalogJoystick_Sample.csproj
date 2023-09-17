@@ -14,7 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Capsium.Foundation.Core\Capsium.Foundation.Core.csproj" />
-    <ProjectReference Include="..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Capsium.config.yaml">

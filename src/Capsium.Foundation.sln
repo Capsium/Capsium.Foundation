@@ -1335,19 +1335,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextDisplayMenuTft_Sample",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Foundation.Core", "Capsium.Foundation.Core\Capsium.Foundation.Core.csproj", "{53AE7545-3D3C-4999-87B6-D92F62C89A37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.F7", "..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj", "{0D7D1304-B1E9-4D45-BC01-8527531A9A9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.F7", "..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj", "{0D7D1304-B1E9-4D45-BC01-8527531A9A9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Core", "..\Capsium.Core\src\Capsium.Core\Capsium.Core.csproj", "{A2DA1187-3352-483D-81D1-AD6BF35C58F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Core", "..\..\Capsium.Core\src\Capsium.Core\Capsium.Core.csproj", "{A2DA1187-3352-483D-81D1-AD6BF35C58F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Contracts", "..\Capsium.Core\src\Capsium.Contracts\Capsium.Contracts.csproj", "{99BE8326-7435-4D64-B88B-30885F051C1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Contracts", "..\..\Capsium.Core\src\Capsium.Contracts\Capsium.Contracts.csproj", "{99BE8326-7435-4D64-B88B-30885F051C1D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Units", "..\Capsium.Core\src\Capsium.Units\Capsium.Units.csproj", "{EF04D71A-3716-440F-9F73-44140039A5BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Units", "..\..\Capsium.Core\src\Capsium.Units\Capsium.Units.csproj", "{EF04D71A-3716-440F-9F73-44140039A5BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Logging", "..\Capsium.Core\src\Capsium.Logging\Capsium.Logging.csproj", "{2AA9748E-F53D-4164-9B4C-33998FC0F751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Logging", "..\..\Capsium.Core\src\Capsium.Logging\Capsium.Logging.csproj", "{2AA9748E-F53D-4164-9B4C-33998FC0F751}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Modbus", "..\Capsium.Core\src\Capsium.Modbus\Capsium.Modbus.csproj", "{A895015C-F79C-4A5A-8422-8FBC34D4600E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Modbus", "..\..\Capsium.Core\src\Capsium.Modbus\Capsium.Modbus.csproj", "{A895015C-F79C-4A5A-8422-8FBC34D4600E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Windows", "..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj", "{4B542D5E-059E-49E2-8822-7EF986D56BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capsium.Windows", "..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj", "{4B542D5E-059E-49E2-8822-7EF986D56BD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

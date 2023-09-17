@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj" />
     <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\Displays.WinForms\Driver\Displays.WinForms.csproj" />
     <ProjectReference Include="..\..\Driver\Graphics.MicroLayout.csproj" />
   </ItemGroup>

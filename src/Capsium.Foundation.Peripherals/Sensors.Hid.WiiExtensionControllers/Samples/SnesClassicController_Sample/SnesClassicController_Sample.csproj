@@ -6,7 +6,7 @@
     <AssemblyName>App</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
     <ProjectReference Include="..\..\Driver\Sensors.Hid.WiiExtensionControllers.csproj" />
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Capsium.Core\src\Capsium.Contracts\Capsium.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\Capsium.Core\src\Capsium.Contracts\Capsium.Contracts.csproj" />
   </ItemGroup>
 </Project>

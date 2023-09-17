@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\Displays.TftSpi\Driver\Displays.TftSpi.csproj" />
     <ProjectReference Include="..\..\Driver\Displays.TextDisplayMenu.csproj" />
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.F7\Capsium.F7.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Capsium.config.yaml">

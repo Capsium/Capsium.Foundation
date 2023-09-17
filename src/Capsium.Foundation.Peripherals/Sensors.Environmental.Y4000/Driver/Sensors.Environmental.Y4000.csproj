@@ -21,7 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include=".\Readme.md" Pack="true" PackagePath="" />
-    <ProjectReference Include="..\..\..\..\Capsium.Core\src\Capsium.Modbus\Capsium.Modbus.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.Modbus\Capsium.Modbus.csproj" />
     
     <ProjectReference Include="..\..\..\Capsium.Foundation.Core\Capsium.Foundation.Core.csproj" />
   </ItemGroup>

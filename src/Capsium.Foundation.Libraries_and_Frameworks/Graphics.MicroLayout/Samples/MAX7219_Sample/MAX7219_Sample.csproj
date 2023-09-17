@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.Core\Capsium.Core.csproj" />
-    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.Core\Capsium.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj" />
     <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\Displays.Max7219\Driver\Displays.Max7219.csproj" />
     <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\ICs.IOExpanders.Ft232h\Driver\ICs.IOExpanders.Ft232h.csproj" />
     <ProjectReference Include="..\..\Driver\Graphics.MicroLayout.csproj" />
