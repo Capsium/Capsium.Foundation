@@ -1,0 +1,28 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <Company>Wilderness Labs, Inc</Company>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="appsettings.yaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\CapsiumCapsium.Core\Source\implementations\f7\CapsiumCapsium.F7\CapsiumCapsium.F7.csproj" />
+    <ProjectReference Include="..\..\Driver\ICs.IOExpanders.SerialWombat.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="CapsiumCapsium.config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

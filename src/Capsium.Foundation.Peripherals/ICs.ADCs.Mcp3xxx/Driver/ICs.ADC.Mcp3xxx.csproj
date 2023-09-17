@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>BMC</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mcp3xxx</AssemblyName>
+    <Company>BMC</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/Capsium/Capsium.Foundation/</PackageProjectUrl>
+    <PackageId>Capsium.Foundation.ADCs.Mcp3xxx</PackageId>
+    <RepositoryUrl>https://github.com/Capsium/Capsium.Foundation</RepositoryUrl>
+    <PackageTags>Capsium.Foundation,Capsium,ADC,analog,digital,Mcp3001,Mcp3002,Mcp3004,Mcp3008,Mcp3201,Mcp3202,Mcp3204,Mcp3208</PackageTags>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Mcp3xxx SPI analog-to-digital converter (MCP3001, MCP3002, MCP3004, MCP3008, MCP3201, MCP3202, MCP3204, MCP3208)</Description>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    
+    <ProjectReference Include="..\..\..\Capsium.Foundation.Core\Capsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

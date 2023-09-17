@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>BMC</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>As1115</AssemblyName>
+    <Company>BMC</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/Capsium/Capsium.Foundation/</PackageProjectUrl>
+    <PackageId>Capsium.Foundation.ICs.IOExpanders.As1115</PackageId>
+    <RepositoryUrl>https://github.com/Capsium/Capsium.Foundation</RepositoryUrl>
+    <PackageTags>Capsium.Foundation, IOExpanders, As1115, led, driver, keyscan</PackageTags>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>AS1115 I2C IO expander, led driver, character display controller and keyscan</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    
+    <ProjectReference Include="..\..\..\Capsium.Foundation.Libraries_and_Frameworks\Graphics.MicroGraphics\Driver\Graphics.MicroGraphics.csproj" />
+  </ItemGroup>
+</Project>

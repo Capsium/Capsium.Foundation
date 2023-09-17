@@ -1,0 +1,29 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Bmp085</AssemblyName>
+    <Company>Wilderness Labs, Inc</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/CapsiumCapsium/CapsiumCapsium.Foundation/</PackageProjectUrl>
+    <PackageId>CapsiumCapsium.Foundation.Sensors.Atmospheric.Bmp085</PackageId>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <PackageTags>CapsiumCapsium.Foundation, Atmospheric, BMP085, Bosche</PackageTags>
+    <Version>0.1.53</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Bosch BMP085 I2C barometric pressure sensor</Description>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    <None Include="..\..\..\icon.png" Pack="true" PackagePath="" />
+    <ProjectReference Include="..\..\..\CapsiumCapsium.Foundation.Core\CapsiumCapsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

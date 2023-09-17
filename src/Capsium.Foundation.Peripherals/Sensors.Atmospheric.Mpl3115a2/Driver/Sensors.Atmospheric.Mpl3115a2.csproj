@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>BMC</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mpl3115a2</AssemblyName>
+    <Company>BMC</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/Capsium/Capsium.Foundation/</PackageProjectUrl>
+    <PackageId>Capsium.Foundation.Sensors.Atmospheric.Mpl3115a2</PackageId>
+    <RepositoryUrl>https://github.com/Capsium/Capsium.Foundation</RepositoryUrl>
+    <PackageTags>Capsium.Foundation,Capsium,Atmospheric,Temperature,Humidity,Mpl3115a2</PackageTags>
+    <Version>0.1.49</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>MPL3115A2 I2C barometric pressure, temperature, and altitude sensor</Description>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Capsium.Foundation.Sensors.Atmospheric</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    
+    <ProjectReference Include="..\..\..\Capsium.Foundation.Core\Capsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

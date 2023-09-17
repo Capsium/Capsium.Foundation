@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>BMC</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FourDigitSevenSegment</AssemblyName>
+    <Company>BMC</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/Capsium/Capsium.Foundation/</PackageProjectUrl>
+    <PackageId>Capsium.Foundation.Displays.Led.FourDigitSevenSegment</PackageId>
+    <RepositoryUrl>https://github.com/Capsium/Capsium.Foundation</RepositoryUrl>
+    <PackageTags>Capsium.Foundation, SevenSegment, Display</PackageTags>
+    <Version>0.1.46</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Digital Four digit seven segment displays</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    
+    <ProjectReference Include="..\..\Displays.Led.SevenSegment\Driver\Displays.Led.SevenSegment.csproj" />
+  </ItemGroup>
+</Project>

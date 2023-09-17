@@ -1,0 +1,27 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Sc16is7x2</AssemblyName>
+    <Company>Wilderness Labs, Inc</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/CapsiumCapsium/CapsiumCapsium.Foundation/</PackageProjectUrl>
+    <PackageId>CapsiumCapsium.Foundation.ICs.IOExpanders.Sc16is7x2</PackageId>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <PackageTags>CapsiumCapsium.Foundation,Sc16is7x2,Sc16is752,Sc16is762,I2C,UART,expander</PackageTags>
+    <Version>0.1.0</Version>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>SC16IS7x2 SPI I2C family of UART expanders (SC16IS752, SC16IS762)</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    <None Include="..\..\..\icon.png" Pack="true" PackagePath="" />
+    <ProjectReference Include="..\..\..\CapsiumCapsium.Foundation.Core\CapsiumCapsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

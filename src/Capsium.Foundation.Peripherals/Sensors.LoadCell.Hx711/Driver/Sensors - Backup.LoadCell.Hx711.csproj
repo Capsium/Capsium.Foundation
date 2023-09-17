@@ -1,0 +1,35 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Hx711</AssemblyName>
+    <Company>Wilderness Labs, Inc</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/CapsiumCapsium/CapsiumCapsium.Foundation/</PackageProjectUrl>
+    <PackageId>CapsiumCapsium.Foundation.Sensors.LoadCell.Hx711</PackageId>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <PackageTags>CapsiumCapsium.Foundation,LoadCell,Hx711</PackageTags>
+    <Version>0.1.49</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Hx711 digital load cell amplifier</Description>
+    <Configurations>Release;Debug</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    <None Include="..\..\..\icon.png" Pack="true" PackagePath="" />
+    <ProjectReference Include="..\..\..\CapsiumCapsium.Foundation.Core\CapsiumCapsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Ina260</AssemblyName>
+    <Company>Wilderness Labs, Inc</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/CapsiumCapsium/CapsiumCapsium.Foundation/</PackageProjectUrl>
+    <PackageId>CapsiumCapsium.Foundation.Sensors.Power.Ina260</PackageId>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <PackageTags>CapsiumCapsium.Foundation, Sensor, Power, Ina260</PackageTags>
+    <Version>0.1.49</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>INA260 I2C current and power monitor</Description>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    <None Include="..\..\..\icon.png" Pack="true" PackagePath="" />
+    <ProjectReference Include="..\..\..\CapsiumCapsium.Foundation.Core\CapsiumCapsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

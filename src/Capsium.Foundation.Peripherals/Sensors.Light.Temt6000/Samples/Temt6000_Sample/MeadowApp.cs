@@ -1,0 +1,53 @@
+﻿using System;
+using System.Threading.Tasks;
+using Capsium;
+using Capsium.Devices;
+using Capsium.Foundation.Sensors.Light;
+
+namespace CapsiumApp
+{
+    public class CapsiumApp : App<F7FeatherV2>
+    {
+        //<!=SNIP=>
+
+        Temt6000 sensor;
+
+        public override Task Initialize()
+        {
+            Resolver.Log.Info("Initialize...");
+
+            // configure our sensor
+            sensor = new Temt6000(Device.Pins.A03);
+
+            // Example that uses an IObservable subscription to only be notified when the voltage changes by at least 0.5V
+            var consumer = Temt6000.CreateObserver(
+                handler: result => Resolver.Log.Info($"Observer filter satisfied: {result.New.Volts:N2}V, old: {result.Old?.Volts:N2}V"),
+                // only notify if the change is greater than 0.5V
+                filter: result => {
+                    if (result.Old is { } old) { //c# 8 pattern match syntax. checks for !null and assigns var.
+                        return (result.New - old).Abs().Volts > 0.5; // returns true if > 0.5V change.
+                    }
+                    return false;
+                });
+
+            sensor.Subscribe(consumer);
+
+            // classical .NET events can also be used:
+            sensor.Updated += (sender, result) => {
+                Resolver.Log.Info($"Voltage Changed, new: {result.New.Volts:N2}V, old: {result.Old?.Volts:N2}V");
+            };
+
+            return Task.CompletedTask;
+        }
+
+        public override async Task Run()
+        {
+            var result = await sensor.Read();
+            Resolver.Log.Info($"Initial temp: {result.Volts:N2}V");
+
+            sensor.StartUpdating(TimeSpan.FromMilliseconds(1000));
+        }
+
+        //<!=SNOP=>
+    }
+}

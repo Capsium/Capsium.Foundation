@@ -1,0 +1,20 @@
+<Project Sdk="Capsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/WildernessLabs/Capsium.Foundation</RepositoryUrl>
+    <Company>Wilderness Labs, Inc</Company>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Capsium.Core\Source\implementations\f7\Capsium.F7\Capsium.F7.csproj" />
+    <ProjectReference Include="..\..\Driver\ICs.ADC.Mcp3xxx.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Capsium.config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

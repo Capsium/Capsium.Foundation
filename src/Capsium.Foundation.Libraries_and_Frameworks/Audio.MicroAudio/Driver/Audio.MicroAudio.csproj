@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>BMC</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MicroAudio</AssemblyName>
+    <Company>BMC</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/Capsium/Capsium.Foundation/</PackageProjectUrl>
+    <PackageId>Capsium.Foundation.Audio.MicroAudio</PackageId>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Capsium/Capsium.Foundation</RepositoryUrl>
+    <PackageTags>Capsium,Capsium.Foundation,Audio,Songs,Tone,Tones,Music,Sound,Effects</PackageTags>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Lightweight single-voice sound effect and music player designed for embedded applications</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    
+    <ProjectReference Include="..\..\..\Capsium.Foundation.Core\Capsium.Foundation.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Capsium.Contracts">
+      <HintPath>..\..\..\..\Capsium.Core\src\Capsium.Contracts\bin\Debug\netstandard2.1\Capsium.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Capsium.Units">
+      <HintPath>..\..\..\..\Capsium.Core\src\Capsium.Units\bin\Debug\netstandard2.1\Capsium.Units.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

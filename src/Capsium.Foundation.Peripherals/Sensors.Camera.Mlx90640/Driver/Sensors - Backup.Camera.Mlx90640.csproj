@@ -1,0 +1,27 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Wilderness Labs, Inc</Authors>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mlx90640</AssemblyName>
+    <Company>Wilderness Labs, Inc</Company>
+    <PackageProjectUrl>http://developer.wildernesslabs.co/CapsiumCapsium/CapsiumCapsium.Foundation/</PackageProjectUrl>
+    <PackageId>CapsiumCapsium.Foundation.Sensors.Camera.Mlx90640</PackageId>
+    <RepositoryUrl>https://github.com/WildernessLabs/CapsiumCapsium.Foundation</RepositoryUrl>
+    <PackageTags>CapsiumCapsium.Foundation, Mlx90640, Camera</PackageTags>
+    <Version>0.1.54</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Mlx90640 I2C far infrared thermal sensor array camera</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="" />
+    <None Include="..\..\..\icon.png" Pack="true" PackagePath="" />
+    <ProjectReference Include="..\..\..\CapsiumCapsium.Foundation.Core\CapsiumCapsium.Foundation.Core.csproj" />
+  </ItemGroup>
+</Project>

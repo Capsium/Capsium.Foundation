@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\CapsiumCapsium.Core\source\implementations\windows\CapsiumCapsium.Windows\CapsiumCapsium.Windows.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\CapsiumCapsium.Core\source\CapsiumCapsium.Core\CapsiumCapsium.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\CapsiumCapsium.Foundation.Peripherals\Displays.Max7219\Driver\Displays.Max7219.csproj" />
+    <ProjectReference Include="..\..\..\..\CapsiumCapsium.Foundation.Peripherals\ICs.IOExpanders.Ft232h\Driver\ICs.IOExpanders.Ft232h.csproj" />
+    <ProjectReference Include="..\..\Driver\Graphics.MicroLayout.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="libmpsse.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

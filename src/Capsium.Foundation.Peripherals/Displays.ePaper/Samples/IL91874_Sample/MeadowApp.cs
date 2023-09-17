@@ -1,0 +1,56 @@
+﻿using Capsium;
+using Capsium.Devices;
+using Capsium.Foundation;
+using Capsium.Foundation.Displays;
+using Capsium.Foundation.Graphics;
+using System.Threading.Tasks;
+
+namespace Displays.ePaper.IL91874_Sample
+{
+    public class CapsiumApp : App<F7FeatherV2>
+    {
+        //<!=SNIP=>
+
+        MicroGraphics graphics;
+
+        public override Task Initialize()
+        {
+            Resolver.Log.Info("Initialize ...");
+
+            var display = new Il91874(
+                spiBus: Device.CreateSpiBus(),
+                chipSelectPin: Device.Pins.A04,
+                dcPin: Device.Pins.A03,
+                resetPin: Device.Pins.A02,
+                busyPin: Device.Pins.A01,
+                width: 176,
+                height: 264);
+
+            graphics = new MicroGraphics(display);
+
+            return Task.CompletedTask;
+        }
+
+        public override Task Run()
+        {
+            Resolver.Log.Info("Run ...");
+
+            graphics.Clear();
+
+            graphics.DrawRectangle(10, 40, 120, 60, Color.Black, true);
+            graphics.DrawRectangle(20, 80, 120, 90, Color.Red, true);
+
+            graphics.CurrentFont = new Font12x16();
+            graphics.DrawText(2, 20, "Capsium F7", Color.Black);
+            graphics.DrawText(30, 50, "Color", Color.Red);
+            graphics.DrawText(50, 90, "Black", Color.Black);
+            graphics.DrawText(50, 120, "White", Color.White);
+
+            graphics.Show();
+
+            return base.Run();
+        }
+
+        //<!=SNOP=>
+    }
+}

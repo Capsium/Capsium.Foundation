@@ -1,0 +1,36 @@
+﻿using Capsium.Foundation.Servos;
+using Capsium.Hardware;
+using System;
+
+namespace Capsium.Foundation.ICs.IOExpanders
+{
+    public abstract partial class SerialWombatBase
+    {
+        /// <summary>
+        /// Represents a serial wombat servo
+        /// </summary>
+        public class Servo : IServo
+        {
+            /// <summary>
+            /// Servo configuration 
+            /// </summary>
+            public ServoConfig Config => throw new NotImplementedException();
+
+            /// <summary>
+            /// Create a new Servo object
+            /// </summary>
+            public Servo(IPin pin)
+            {
+                throw new NotImplementedException();
+            }
+
+            /*
+            byte[] tx = { 200, _pin, (byte)SerialWombatPinModes.PIN_MODE_SERVO, _pin, (byte)(_position & 0xFF), (byte)((_position >> 8) & 0xFF), _reverse ? (byte)1 : (byte)0, 0x55 };
+			byte[] rx;
+			_sw.sendPacket(tx, out rx);
+			byte[] tx2 = { 201, _pin, (byte)SerialWombatPinModes.PIN_MODE_SERVO, (byte)(_min & 0xFF), (byte)((_min >> 8) & 0xFF), (byte)((_max - _min) & 0xFF), (byte)(((_max - _min) >> 8) & 0xFF), 0x55 };
+			_sw.sendPacket(tx2, out rx);
+            */
+        }
+    }
+}

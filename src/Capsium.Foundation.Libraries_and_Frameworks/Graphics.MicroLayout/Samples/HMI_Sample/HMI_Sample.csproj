@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <TargetFramework>net7.0-windows</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Capsium.Core\src\Capsium.Windows\Capsium.Windows.csproj" />
+    <ProjectReference Include="..\..\..\..\Capsium.Foundation.Peripherals\Displays.WinForms\Driver\Displays.WinForms.csproj" />
+    <ProjectReference Include="..\..\Driver\Graphics.MicroLayout.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="libmpsse.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="logo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

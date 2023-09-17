@@ -1,0 +1,118 @@
+﻿using Capsium;
+using Capsium.Devices;
+using Capsium.Foundation.Leds;
+using Capsium.Hardware;
+using System;
+using System.Threading.Tasks;
+
+namespace Leds.LedBarGraph_Sample
+{
+    public class CapsiumApp : App<F7FeatherV2>
+    {
+        //<!=SNIP=>
+
+        LedBarGraph ledBarGraph;
+
+        public override Task Initialize()
+        {
+            Resolver.Log.Info("Initializing...");
+
+            // Using an array of Pins 
+            IPin[] pins =
+            {
+                 Device.Pins.D11,
+                 Device.Pins.D10,
+                 Device.Pins.D09,
+                 Device.Pins.D08,
+                 Device.Pins.D07,
+                 Device.Pins.D06,
+                 Device.Pins.D05,
+                 Device.Pins.D04,
+                 Device.Pins.D03,
+                 Device.Pins.D02
+            };
+
+            ledBarGraph = new LedBarGraph(pins);
+
+            return Task.CompletedTask;
+        }
+
+        public override async Task Run()
+        {
+            Resolver.Log.Info("TestLedBarGraph...");
+
+            float percentage = 0;
+
+            while (true)
+            {
+                Resolver.Log.Info("Turning them on and off for 200ms using SetLed...");
+                for (int i = 0; i < ledBarGraph.Count; i++)
+                {
+                    await ledBarGraph.SetLed(i, true);
+                    await Task.Delay(100);
+                    await ledBarGraph.SetLed(i, false);
+                }
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Turning them on using Percentage...");
+                while (percentage < 1)
+                {
+                    percentage += 0.10f;
+                    await ledBarGraph.SetPercentage(Math.Min(1.0f, percentage));
+                    await Task.Delay(100);
+                }
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Turning them off using Percentage...");
+                while (percentage > 0)
+                {
+                    percentage -= 0.10f;
+                    await ledBarGraph.SetPercentage(Math.Max(0.0f, percentage));
+                    await Task.Delay(100);
+                }
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Charging animation...");
+                while (percentage < 1)
+                {
+                    percentage += 0.10f;
+                    await ledBarGraph.SetPercentage(Math.Min(1.0f, percentage));
+                    await ledBarGraph.StartBlink(ledBarGraph.GetTopLedForPercentage());
+                    await Task.Delay(2000);
+                }
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Discharging animation...");
+                while (percentage > 0)
+                {
+                    percentage -= 0.10f;
+                    await ledBarGraph.SetPercentage(Math.Max(0.0f, percentage));
+                    await ledBarGraph.StartBlink(ledBarGraph.GetTopLedForPercentage());
+                    await Task.Delay(2000);
+                }
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Blinking for 5 seconds at 500ms on/off...");
+                await ledBarGraph.StartBlink();
+                await Task.Delay(5000);
+                await ledBarGraph.StopAnimation();
+
+                await Task.Delay(1000);
+
+                Resolver.Log.Info("Blinking for 5 seconds at 200ms on/off...");
+                await ledBarGraph.StartBlink(TimeSpan.FromMilliseconds(200), TimeSpan.FromMilliseconds(200));
+                await Task.Delay(5000);
+                await ledBarGraph.StopAnimation();
+
+                await Task.Delay(1000);
+            }
+        }
+
+        //<!=SNOP=>
+    }
+}

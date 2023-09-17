@@ -1,0 +1,17 @@
+<Project Sdk="CapsiumCapsium.Sdk/1.1.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputType>Library</OutputType>
+    <AssemblyName>App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Driver\Sensors.Hid.As5013.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\CapsiumCapsium.Core\Source\implementations\f7\CapsiumCapsium.F7\CapsiumCapsium.F7.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="CapsiumCapsium.config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
